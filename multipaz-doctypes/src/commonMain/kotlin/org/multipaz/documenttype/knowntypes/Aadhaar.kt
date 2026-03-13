@@ -442,6 +442,16 @@ object Aadhaar {
                 )
             )
             .addSampleRequest(
+                id = "age_over_18_zkp",
+                displayName ="Age over 18 (ZKP)",
+                mdocDataElements = mapOf(
+                    AADHAAR_NAMESPACE to mapOf(
+                        "age_above18" to false,
+                    )
+                ),
+                mdocUseZkp = true
+            )
+            .addSampleRequest(
                 id = "age_over_18_and_portrait",
                 displayName = "Age over 18 + portrait",
                 mdocDataElements = mapOf(
