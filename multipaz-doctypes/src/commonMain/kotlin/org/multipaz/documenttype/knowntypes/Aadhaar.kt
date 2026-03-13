@@ -10,6 +10,7 @@ import kotlinx.datetime.LocalDate
 
 /**
  * Object containing the metadata of the Aadhaar Document Type.
+ * Reference: https://docs.uidai.gov.in/readme/verifiable-credential-specifications/iso-18013-5-aadhaar-mdoc-specs
  */
 object Aadhaar {
     const val AADHAAR_DOCTYPE = "in.gov.uidai.aadhaar.1"
@@ -24,7 +25,7 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.Date,
                 "credential_issuing_date",
-                "Credential Issuing Date",
+                "Credential issuing date",
                 "Date of credential issuance",
                 false,
                 AADHAAR_NAMESPACE,
@@ -34,8 +35,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.Date,
                 "enrolment_date",
-                "Enrolment Date",
-                "Date of enrolment",
+                "Enrollment date",
+                "Date of enrollment",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.TODAY,
@@ -44,8 +45,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "enrolment_number",
-                "Enrolment Number",
-                "Enrolment number",
+                "Enrollment number",
+                "Enrollment number",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.NUMBERS,
@@ -75,7 +76,7 @@ object Aadhaar {
                 DocumentAttributeType.String,
                 "resident_name",
                 "Name",
-                "Resident Name",
+                "Resident name",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PERSON,
@@ -84,8 +85,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_resident_name",
-                "Local Name",
-                "Resident Name in Local Language",
+                "Local name",
+                "Resident name in local language",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PERSON,
@@ -94,8 +95,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.Boolean,
                 "age_above18",
-                "Age Above 18",
-                "Age Above 18",
+                "Age above 18",
+                "Age above 18",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.TODAY,
@@ -104,8 +105,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.Boolean,
                 "age_above50",
-                "Age Above 50",
-                "Age Above 50",
+                "Age above 50",
+                "Age above 50",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.TODAY,
@@ -114,8 +115,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.Boolean,
                 "age_above60",
-                "Age Above 60",
-                "Age Above 60",
+                "Age above 60",
+                "Age above 60",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.TODAY,
@@ -124,8 +125,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.Boolean,
                 "age_above75",
-                "Age Above 75",
-                "Age Above 75",
+                "Age above 75",
+                "Age above 75",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.TODAY,
@@ -134,8 +135,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.Date,
                 "dob",
-                "Date of Birth",
-                "Date of Birth",
+                "Date of birth",
+                "Date of birth",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.TODAY,
@@ -164,8 +165,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_building",
-                "Local Building",
-                "Local Building",
+                "Local building",
+                "Local building",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -184,8 +185,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_locality",
-                "Local Locality",
-                "Local Locality",
+                "Local locality",
+                "Local locality",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -204,8 +205,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_street",
-                "Local Street",
-                "Local Street",
+                "Local street",
+                "Local street",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -224,8 +225,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_landmark",
-                "Local Landmark",
-                "Local Landmark",
+                "Local landmark",
+                "Local landmark",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -235,7 +236,7 @@ object Aadhaar {
                 DocumentAttributeType.String,
                 "vtc",
                 "VTC",
-                "Village/Town/City",
+                "Village/town/city",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -245,7 +246,7 @@ object Aadhaar {
                 DocumentAttributeType.String,
                 "local_vtc",
                 "Local VTC",
-                "Local Village/Town/City",
+                "Local village/town/city",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -254,8 +255,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "sub_district",
-                "Sub-District",
-                "Sub-District",
+                "Sub-district",
+                "Sub-district",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -264,8 +265,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_sub_district",
-                "Local Sub-District",
-                "Local Sub-District",
+                "Local Sub-district",
+                "Local Sub-district",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -284,8 +285,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_district",
-                "Local District",
-                "Local District",
+                "Local district",
+                "Local district",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -304,8 +305,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_state",
-                "Local State",
-                "Local State",
+                "Local state",
+                "Local state",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -314,8 +315,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "po_name",
-                "PO Name",
-                "Post Office Name",
+                "PO name",
+                "Post office name",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -324,8 +325,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_po_name",
-                "Local PO Name",
-                "Local Post Office Name",
+                "Local PO name",
+                "Local post office name",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -354,8 +355,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "local_address",
-                "Local Address",
-                "Local Address",
+                "Local address",
+                "Local address",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PLACE,
@@ -374,8 +375,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "masked_mobile",
-                "Masked Mobile",
-                "Masked Mobile",
+                "Masked mobile",
+                "Masked mobile",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.PHONE,
@@ -394,8 +395,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.String,
                 "masked_email",
-                "Masked Email",
-                "Masked Email",
+                "Masked email",
+                "Masked email",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.EMAIL,
@@ -424,8 +425,8 @@ object Aadhaar {
             .addMdocAttribute(
                 DocumentAttributeType.Date,
                 "expires_on",
-                "Expires On",
-                "Expires On",
+                "Expires on",
+                "Expires on",
                 false,
                 AADHAAR_NAMESPACE,
                 Icon.CALENDAR_CLOCK,
